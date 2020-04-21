@@ -22,17 +22,16 @@ MobileNetV3 SSD的简洁版本
 
 
 
-mobilenetv3的预训练模型从这里下载
-https://github.com/xiaolai-sqlai/mobilenetv3
+以下是站在巨人肩膀上的那个人的肩膀上
+hard negative mining和L2Norm没有封装,在代码里直白的编写
 
-mmdetection版本
-https://github.com/ujsyehao/mobilenetv3-ssd
 
-增强函数改编自
- https://github.com/amdegroot/ssd.pytorch/blob/master/utils/augmentations.py
+[mobilenetv3的预训练模型从这里下载](https://github.com/xiaolai-sqlai/mobilenetv3)
 
- 计算mAP的博客
- https://medium.com/@jonathan_hui/map-mean-average-precision-for-object-detection-45c121a31173
+[mmdetection版本](https://github.com/ujsyehao/mobilenetv3-ssd)
 
- 坐标变换部分来自
- https://github.com/weiliu89/caffe/issues/155
+[增强函数改编自](https://github.com/amdegroot/ssd.pytorch/blob/master/utils/augmentations.py)
+
+ [计算mAP的博客](https://medium.com/@jonathan_hui/map-mean-average-precision-for-object-detection-45c121a31173)
+
+ [坐标变换部分来自](https://github.com/weiliu89/caffe/issues/155)
