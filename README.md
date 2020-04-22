@@ -2,7 +2,7 @@
 MobileNetV3 SSD的简洁版本
 
 环境
-
+Ubuntu18.04 
 版本 PyTorch 1.4
 
 如果您想从头开始需要使用
@@ -94,3 +94,15 @@ hard negative mining和L2Norm没有封装,在代码里直白的编写
  [计算mAP的博客](https://medium.com/@jonathan_hui/map-mean-average-precision-for-object-detection-45c121a31173)
 
  [坐标变换部分来自](https://github.com/weiliu89/caffe/issues/155)
+ 
+ 关于提高mAP的做法
+
+如果还想提高mAP怎么办
+
+本repo没有在COCO数据集下训练,只训练了VOC0712数据集
+如果想得到更高的mAP,可以尝试下先在COCO数据集下训练,这时候得到的模型作为预训练模型,然后在VOC0712数据集中微调,最后再在VOC2007下测试,看看是不是会得到大于0.619mAP的数
+
+我使用第二版的部分源码做的PyTorch版的VGG-SSD,测试不同的学习率
+如果按照常规做法,在训练达到某个epoch 原学习率* 0.1 , 在训练达到某个epoch 原学习率*0.01这样最终结果会得到比原论文还优秀的0.77x mAP,x代表一个很大的个位数.
+如果单独采用余弦退火,mAP可以到0.771mAP,低了0.00y.
+所以想增加mAP可以尝试下常规做法的学习率. 
