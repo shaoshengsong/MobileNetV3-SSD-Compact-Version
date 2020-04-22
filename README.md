@@ -22,7 +22,7 @@ checkpoint_ssd300_500epoch.pth.tar
 
 
 500次epoch模型测试结果
-
+```
 1 Mean Average Precision (mAP): 0.619  
 max_overlap=0.45
 
@@ -51,7 +51,7 @@ Mean Average Precision (mAP): 0.619的详细结果
  'sofa': 0.6960644721984863,
  'train': 0.7622987627983093,
  'tvmonitor': 0.5860077142715454}
- 
+ ```
  使用步骤
 一 下载VOC数据集之后,将VOCtrainval_06-Nov-2007和VOCtest_06-Nov-2007合并在一起
 
