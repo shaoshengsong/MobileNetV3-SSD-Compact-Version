@@ -64,7 +64,8 @@ Epoch: [499][1000/1035][5.611666969162847e-05]	Batch Time 0.159 (0.150)	Data Tim
 ```
  使用步骤
 一 下载VOC数据集之后,将VOCtrainval_06-Nov-2007和VOCtest_06-Nov-2007合并在一起
-
+数据集下载 可以看这里
+https://blog.csdn.net/flyfish1986/article/details/95367745
 
 二 先打开create_data_lists.py文件
 改成自己数据集的路径
