@@ -1,6 +1,9 @@
 # MobileNetV3-SSD-Compact-Version
 MobileNetV3 SSD的简洁版本
 
+希望尝试新技术请到这里 https://github.com/shaoshengsong/quarkdet
+一个轻量级的目标检测包括多种模型
+
 环境
 Ubuntu18.04 
 版本 PyTorch 1.4
